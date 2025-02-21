@@ -1,7 +1,7 @@
 import cv2 as cv
 
-img = cv.imread("../Photos/cat.jpg")  # Lùi về thư mục cha rồi vào Photos/
-cv.imshow("Cat", img)
+# img = cv.imread("../Photos/cat.jpg")  # Lùi về thư mục cha rồi vào Photos/
+# cv.imshow("Cat", img)
 
 
 def rescaleFrame(frame, scale=0.75):
@@ -17,5 +17,5 @@ while True:
     isTrue, frame = capture.read()
     frame_resized = rescaleFrame(frame, scale=0.5)
     cv.imshow("Video", frame)
-    cv.imshow("Video", frame)
+    cv.imshow("Video Resized", frame)
 cv.waitKey(0)
